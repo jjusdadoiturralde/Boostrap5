@@ -8,14 +8,206 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    
+    <link rel="stylesheet" href="css/footer.css">
     <title>P5</title>
 </head>
 
 <body>
 
-   
+    <!--     NAV    -->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/logo1.png" width="75" height="75">
+            Dead Weight
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav mr-auto text-center">
+                <a class="nav-item nav-link active" href="index.html">Inicio</a>
+                <a class="nav-item nav-link" href="#carousel">Slider</a>
+                <a class="nav-item nav-link" href="#card">Nosotros</a>
+                <a class="nav-item nav-link" href="#jumbo">Información</a>
+            </div>
+            
+            
+            
+            <!-- Modal + formulario -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                Formulario DMC
+            </button>
+
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">¡Coméntanos!</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                        Subscribirse
+                                    </label>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Enviar datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </nav>
+            
+
+
+    <!--    CAROUSEL   -->
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/nero.png" alt="Nero">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/dantejpg.jpg" alt="Dante">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/vergil.png" alt="Vergil">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+
+    <!--   CARDS         -->
+
+
+    <div id="card" class="card-group">
+        <div class="card">
+            <img src="images/neroc.jpg" class="card-img-top" alt="Nero" width="450" height="450">
+            <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Nero</h5>
+                <p class="card-text">Es un cazador de demonios que aparece en Devil May Cry 4 y 5, portando la Red Queen y Blue Rose.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/dantec.jpg" class="card-img-top" alt="Dante" width="450" height="450">
+            <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Dante</h5>
+                <p class="card-text">Es el cazador de demonios definitivo, apareciendo en toda la saga y llevando sus poderes demoniacos al maximo</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/vergilc.jpg" class="card-img-top" alt="Vergil" width="450" height="450">
+            <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Vergil</h5>
+                <p class="card-text">Hermano de dante, consumio el fruto de poder y el brazo demoniaco de Nero para obtener mas poder</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JUMBOTRON      -->
+
+
+    <div id="jumbo" class="jumbotron jumbotron-fluid bg-dark text-white">
+        <div class="container">
+            <h1 class="display-4">Devil may cry</h1>
+            <p class="lead">Devil May Cry es el nombre de una serie de videojuegos de acción, desarrollados por la compañía Capcom</p>
+        </div>
+    </div>
+    
+    
+    <!-- FOOTER      -->
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                        <p>Somos la mejor empresa cazademonios, con un 100% de fiabilidad pero con daños colaterales, y devil may cry uh</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <dl class="contact-list">
+                        <dt>Dirección</dt>
+                        <dd>Limbo City, London</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>email:</dt>
+                        <dd><a href="mailto:#">dmcbussiness@devilmaycry.com</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>phones:</dt>987654321
+
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row no-gutters social-container">
+            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+    </footer>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
